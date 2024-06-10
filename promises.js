@@ -13,7 +13,7 @@ function walkthedog(){
 }
 function takeOutTrash(){
     return new Promise((resolve,reject)=>{
-        const youtakeOutTrash = false
+        const youtakeOutTrash = true
         setTimeout(()=>{
             if(youtakeOutTrash){
                 resolve("you took Out Trash")
@@ -38,10 +38,28 @@ function cleankitchen(){
     })
 }
 
-walkthedog().then(value=>{console.log(value); return takeOutTrash()})
-           .then(value=>{console.log(value); return cleankitchen()})
-           .then(value=>{console.log(value); console.log("All done buddy");})
-           .catch(error=>{console.log(error);})
+// walkthedog().then(value=>{console.log(value); return takeOutTrash()})
+//            .then(value=>{console.log(value); return cleankitchen()})
+//            .then(value=>{console.log(value); console.log("All done buddy");})
+//            .catch(error=>{console.log(error);})
 
 
 
+//use of async and await in handling promises
+
+async function handlingfunctions(){
+    try{
+        let thedoghaswalked = await walkthedog();
+        console.log(thedoghaswalked);
+        let theytookOutTrash = await takeOutTrash();
+        console.log(theytookOutTrash);
+        let theycleanedkitchen = await cleankitchen();
+        console.log(theycleanedkitchen);
+
+        console.log("you finished the work");
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+handlingfunctions()
