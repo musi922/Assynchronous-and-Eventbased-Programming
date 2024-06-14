@@ -16,8 +16,7 @@ function takeOutTrash(){
         const youtakeOutTrash = true
         setTimeout(()=>{
             if(youtakeOutTrash){
-                resolve("you took Out Trash")
-            }
+                resolve("you took Out Trash")            }
             else{
                 reject ("you didnot take Out Trash")
             }

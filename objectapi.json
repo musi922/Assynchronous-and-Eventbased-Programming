@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "postalCode": "12345"
+      },
+      "phone": "555-1234",
+      "website": "johndoe.com",
+      "company": {
+        "name": "John's Designs",
+        "catchPhrase": "Innovative solutions",
+        "bs": "design"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Othertown",
+        "state": "TX",
+        "postalCode": "67890"
+      },
+      "phone": "555-5678",
+      "website": "janesmith.net",
+      "company": {
+        "name": "Smith Consulting",
+        "catchPhrase": "Consulting for success",
+        "bs": "consulting"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Robert Brown",
+      "email": "robert.brown@example.com",
+      "address": {
+        "street": "789 Oak St",
+        "city": "Elsewhere",
+        "state": "NY",
+        "postalCode": "11223"
+      },
+      "phone": "555-7890",
+      "website": "robertbrown.org",
+      "company": {
+        "name": "Brown Solutions",
+        "catchPhrase": "Solutions for a better world",
+        "bs": "solutions"
+      }
+    }
+  ]
+  
